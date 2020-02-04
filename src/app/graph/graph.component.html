@@ -1,0 +1,27 @@
+<div class="main">
+  <span (click)='changeColor()'>Change color</span>
+  <span (click)='rotateCell()'>Rotate</span>
+  <span (click)='changeGeometry()'>Geometry</span>
+  <span (click)='changeVertex()'>Vertex style</span>
+  <span (click)='changeEdge()'>Edge style</span>
+  <span (click)='changeStroke()'>Stroke color</span>
+  <span (click)='addWaypoints()'>Add Waypoints</span>
+  <span (click)='customCell()'>Custom Cell</span>
+  <div class="graph">
+      <div class="toolbars">
+        <span (click)='toggleToolbar(toolbar1)'>toolbar 1</span>
+        <div class="toolbar1 toolbar" id='toolbar1' #toolbar1></div>
+        <span (click)='toggleToolbar(toolbar2)'>toolbar 2</span>
+        <div class="toolbar2 toolbar" id='toolbar2' #toolbar2></div>
+        <span (click)='toggleToolbar(toolbar3)'>toolbar 3</span>
+        <div class="toolbar3 toolbar" id='toolbar3' #toolbar3></div>
+        <span (click)='toggleToolbar(toolbar4)'>toolbar 4</span>
+        <div class="toolbar4 toolbar" id='toolbar4' #toolbar4></div>
+      </div>
+      <div
+          #container
+          id="container"
+          class="container">
+      </div>
+  </div>
+</div>
